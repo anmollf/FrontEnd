@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+
+        body{
+            background-color: rgb(180, 180, 180);
+        }
+
+        .super{
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(50,50,50,.90);
+            color: white;
+            /* align-content: flex-end; */
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+
+        .name{
+            display: block;
+            padding: 15px;
+            font-size: large; 
+            padding-left: 40px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* background-color: rgba(0,200,0,.85); */
+            color: white;
+            /* align-content: flex-end; */
+            justify-content: flex-end;
+        }
+
+        .button{
+            display: block;
+            height: 75px;
+            padding-top: 32.5px;
+            padding-left: 60px;
+            font-size: 25px;
+            border-left: .5px solid white;
+            margin-right: 50px;
+            /* margin-left: 0; */
+        }
+
+
+        /* .button:hover{
+            display: block;
+            height: 70px;
+            /* background-color: white;
+            color: green; */
+            /* padding-top: 32.5px;
+            padding-left: 80px;
+            font-size: 30px;
+            border-left: .5px solid white;
+            margin-right: auto;
+            margin-left: 0;
+        } */ 
+
+        p{
+            margin-top:125px;
+            font-size: 45px
+        }
+
+        .image{
+            display: block;
+            margin-top: 150px;
+            margin-left: 40%;
+            margin-right: auto;
+            margin-bottom: 50px;
+            /* width: 100%; */
+        }
+
+
+        .image img:hover{
+            border: 4.5px solid black;
+            transform: scale(1.25);
+            transform-origin: center center;
+        }
+
+        .education{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        @keyframes change {
+            from{
+                background-color: white;
+                border: 5px solid black;
+            }
+            to{
+                background-color: black;
+                border: 5px solid white;
+                color: white;
+            }
+        }
+
+        .ed-child{
+            display: block;
+            text-align: center;
+            background-color: white;
+            border: 5px solid black;
+            padding: 10px 60px;
+            font-size: 25px;
+            flex-basis: 20%;
+            flex-grow: 0;
+            animation-name: change;
+            animation-duration: 1.5s;
+        }
+
+        .ed-child:hover{
+            display: block;
+            text-align: center;
+            background-color: black;
+            border: 5px solid white;
+            color: white;
+            padding: 10px 60px;
+            font-size: 25px;
+            flex-basis: 20%;
+            flex-grow: 0;
+        }
+
+        .ed-child ul{
+            display: inline-block;
+            text-align: left;
+        }
+
+        .About{
+            display: block;
+            /* background-color: rgba(255,255,255,0.60); */
+            font-size: 25px;
+            padding: 0px 40px;
+            padding-top: 0px;
+            /* margin-top: 5px; */
+            /* border: 10px solid rgba(255,255,255,0.90);; */
+            border-right: .25px solid white;
+            border-left: .25px solid white;
+        }
+
+        .About h1{
+            text-align: center;
+        }
+
+        .txt:hover{
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="super">
+            <div class="name">
+                <h1><b>Anmol Madaik</b></h1>
+            </div>
+            <div class ="container">
+                <div class="button">
+                    Home
+                </div>
+            
+                <div class="button">
+                    About
+                </div>
+                <div class="button">
+                    Contact
+                </div>
+                <div class="button">
+                    Html
+                </div>
+            
+                <div class="button">
+                    Css
+                </div>
+                <div class="button">
+                    JS
+                </div>
+            </div>
+        </div>        
+    </nav>
+     <div class="image">
+        <img src="goku.jpg">
+     </div>
+     <hr>
+     <div class="education">
+        <div class="ed-child">
+            <h2><u>Class X</u></h2>
+            <h5> School: St. Luke's School</h5>
+            <h5> Location: Solan </h5>
+            <h5> Year Completed: 2017 </h5>
+            <h5>Board: CBSE</h5>
+            <h5>Subjects Studied:<br>
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Maths</li>
+                    <li>Science</li>
+                    <li>Social Science</li>
+                </ul>
+            </h5>
+        </div>
+        <div class="ed-child">
+            <h2><u>Class XII</u></h2>
+            <h5> School: Him Academy Public School</h5>
+            <h5> Location: Hamirpur </h5>
+            <h5> Year Completed: 2019 </h5>
+            <h5>Board: CBSE</h5>
+            <h5>Subjects Studied:<br>
+                <ul>
+                    <li>Physics</li>
+                    <li>Chemistry</li>
+                    <li>Maths</li>
+                    <li>English</li>
+                    <li>IP</li>
+                </ul>
+            </h5>
+        </div>
+        <div class="ed-child">
+            <h2><u>College</u></h2>
+            <h5> College: NIT Hamirpur</h5>
+            <h5> Location: Hamirpur </h5>
+            <h5> Year Completed: 2024 </h5>
+            <h5>Course: Dual Degree</h5>
+            <h5>Subjects Studied:<br>
+                <ul>
+                    <li>Computer Science and Engineering</li>
+                </ul>
+            </h5>
+        </div>
+     </div>
+     <hr>
+     <div class="About">
+        <p>
+            <h1>ABOUT</h1><br>
+            <div class ="txt">
+            My name is Anmol Madaik. I'm a student of National Institute of Technology Hamirpur, in Computer Science and Engineering Dual Degree.
+            Basically I'm from Solan, Himachal Pradesh. I'm currently working as a software engineer intern at Lambda Function, Chandigarh.
+            <br>
+            </div>
+            <br>
+            <div class ="txt">
+            <h2>FROM DATA TO AUTONOMY</h2>
+            <h3>Machining data holds tremendous potential from CAD-to-Part</h3>
+            Lambda Function's software combines decades of CNC machining domain knowledge with the latest advancements in computer science and artificial intelligence, to deliver new tools that augment the technical workforce.
+            </div>
+            <br>
+            <br>
+            <div class ="txt">
+            Precision component manufacturers are guaranteed 10x+ ROI driven by:
+            ​
+            <ul>
+                <li>Higher machine uptime</li> 
+
+                <li>Reduced rework & scrap</li>
+
+                <li>Optimized spend on cutting tools</li>
+
+                <li>Increased staff productivity</li>
+
+                <li>Reduced programming time, weeks to days</li>
+
+                <li>Improved forecasting of machining costs</li>
+
+            ​</ul>
+        </div>
+        </p>
+
+     </div>
+     <hr>
+</body>
+</html>
